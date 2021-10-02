@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>ch.cloud.quickdocument.service</groupId>
+    <artifactId>QuickDocuments</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <artifactId>QuickDocumentRest</artifactId>
+  <name>Quick Document Rest</name>
+  <packaging>war</packaging>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>ch.cloud.quickdocument.service</groupId>
+  		<artifactId>QuickDocumentsMvc</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
+  </dependencies>
+  
+  
+  <build>
+		<!-- Maven will append the version to the finalName (which is the name 
+			given to the generated war, and hence the context root) -->
+		<finalName>QuickDocumentService</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version><!--$NO-MVN-MAN-VER$-->
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.2</version><!--$NO-MVN-MAN-VER$-->
+				<configuration>
+					<!-- Java EE 6 doesn't require web.xml, Maven needs to catch up! -->
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
+</project>
