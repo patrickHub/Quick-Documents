@@ -1,11 +1,11 @@
-#Quick Documents
-##What is Quick Documents
+# Quick Documents
+## What is Quick Documents
 Quick Document is an open source project design to test and compare Insfrastructure as a Service (IaaS) provided by most of the Cloud provider. This services will be used by users to save document like invoice or certificate as an image and then later allow them to search for these documents using keywords. It's a full functionnal and responsive web services that also enable users to switch from one language to another between the following ones: English French, German and Italian.
 
-##Quick Document Database design
+## Quick Document Database design
 In order to simplify things, we have create one database with two tables. The first one will contain image information like image path, and uploaded date. And the second will be used to store text that has been extracted from each image as well a reference as that image. The text will be used later to search and filter images.
 
-##Quick Document Techonology
+## Quick Document Techonology
 Well Quick Document is powered by
 
  - [x] [Java 11] (https://docs.oracle.com/en/java/javase/11/docs/api/index.html)
@@ -17,11 +17,11 @@ Well Quick Document is powered by
  - [x] [Bootstrap 5.1.1] (https://getbootstrap.com/docs/5.1/getting-started/introduction/)
  - [x] [Maven] (https://mvnrepository.com/)
 
-##Quick Document Functionalities
+## Quick Document Functionalities
 
 - Upload images
 - Search images
-###Getting Started
+### Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ###Prerequisites
@@ -43,5 +43,5 @@ You need to add a System Variable named TESSDATA_PREFIX that will hold path of t
 
 And then your can upload it into an application server as [Wildfly] (https://www.wildfly.org/), [Glassfish] (https://glassfish.org/) or [Tomcat] (http://tomcat.apache.org/) then start upload your images into [http://127.0.0.1:8080/QuickDocumentService]
 
-##Authors
+## Authors
 PatrickHub
