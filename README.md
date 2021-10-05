@@ -13,6 +13,7 @@ Well Quick Document is powered by
  - [x] [Free Template Language 2.3.0.RELEASE] (https://freemarker.apache.org/docs/versions_2_3.html)
  - [x] [Hibernate] (https://hibernate.org/)
  - [x] [MySql 8.0.024] (https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-24.html)
+ - [x] [Tess4j 4.5.4] (https://libraries.io/maven/net.sourceforge.tess4j:tess4j/4.5.4) to reconive and read optical character on uploaded images
  - [x] [Bootstrap 5.1.1] (https://getbootstrap.com/docs/5.1/getting-started/introduction/)
  - [x] [Maven] (https://mvnrepository.com/)
 
@@ -38,6 +39,8 @@ git clone https://github.com/patrickHub/quick-document.git
 cd quick-document
 mvn clean instal
 ```
+You need to add the System Variable named TESSDATA_PREFIX that will hold path of the [OCR/tessdata](https://github.com/patrickHub/Quick-Documents/tree/main/OCR/tessdata) as value.
+
 And then your can upload it into an application server as [Wildfly] (https://www.wildfly.org/), [Glassfish] (https://glassfish.org/) or [Tomcat] (http://tomcat.apache.org/) then start upload your images into [http://127.0.0.1:8080/QuickDocumentService]
 
 ##Authors
