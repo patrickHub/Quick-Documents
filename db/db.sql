@@ -1,5 +1,9 @@
 CREATE DATABASE quickdocument_db;
 
+CREATE USER 'quickdocument_backend'@'%' IDENTIFIED BY 'h21hB17';
+
+GRANT ALL PRIVILEGES ON quickdocument_db.* TO 'quickdocument_backend'@'%';
+
 USE quickdocument_db;
 
 CREATE TABLE Image(

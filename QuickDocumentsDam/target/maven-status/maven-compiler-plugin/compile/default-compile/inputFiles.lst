@@ -1,0 +1,12 @@
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\model\Dtos\ImageDTO.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\adapter\DbToDtoMapper.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\dbaccess\ImageTextDAO.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\model\entities\ImageText.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\model\Dtos\ImageTextDTO.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\adapter\DtoToDbMapper.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\dbaccess\ImageDAO.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\utilities\Utility.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\adapter\ImageTextManager.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\configuration\QuickDocumentPersistentManager.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\adapter\ImageManager.java
+C:\Users\pdjomo\Private\training\mse\tsm_cloud_sys\cours\Session 1 - Introduction to Cloud\Quick-Document\QuickDocumentsDam\src\main\java\ch\cloud\quickdocument\service\dam\model\entities\Image.java

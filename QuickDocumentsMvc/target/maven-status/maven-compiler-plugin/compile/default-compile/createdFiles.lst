@@ -1,0 +1,10 @@
+ch\cloud\quickdocument\service\mvc\handler\FreeMarkerPageHandler.class
+ch\cloud\quickdocument\service\mvc\configuration\CustomWebMvcConfigurer.class
+ch\cloud\quickdocument\service\mvc\configuration\Constants.class
+ch\cloud\quickdocument\service\mvc\configuration\AppConfigurationMvc.class
+ch\cloud\quickdocument\service\mvc\model\beans\UrlBean.class
+ch\cloud\quickdocument\service\mvc\adapter\CustomHandlerInterceptorAdapter.class
+ch\cloud\quickdocument\service\mvc\facade\web\HomeController.class
+ch\cloud\quickdocument\service\mvc\configuration\Urls.class
+ch\cloud\quickdocument\service\mvc\utilities\FileImageUtil.class
+ch\cloud\quickdocument\service\mvc\filter\RequestResponseLoggingFilter.class

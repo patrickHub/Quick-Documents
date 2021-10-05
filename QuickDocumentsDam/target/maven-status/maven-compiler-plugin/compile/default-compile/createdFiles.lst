@@ -1,0 +1,12 @@
+ch\cloud\quickdocument\service\dam\utilities\Utility.class
+ch\cloud\quickdocument\service\dam\dbaccess\ImageDAO.class
+ch\cloud\quickdocument\service\dam\dbaccess\ImageTextDAO.class
+ch\cloud\quickdocument\service\dam\model\Dtos\ImageTextDTO.class
+ch\cloud\quickdocument\service\dam\configuration\QuickDocumentPersistentManager.class
+ch\cloud\quickdocument\service\dam\adapter\ImageManager.class
+ch\cloud\quickdocument\service\dam\adapter\ImageTextManager.class
+ch\cloud\quickdocument\service\dam\model\entities\Image.class
+ch\cloud\quickdocument\service\dam\model\entities\ImageText.class
+ch\cloud\quickdocument\service\dam\adapter\DbToDtoMapper.class
+ch\cloud\quickdocument\service\dam\adapter\DtoToDbMapper.class
+ch\cloud\quickdocument\service\dam\model\Dtos\ImageDTO.class
