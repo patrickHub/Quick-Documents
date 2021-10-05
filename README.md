@@ -39,7 +39,7 @@ git clone https://github.com/patrickHub/quick-document.git
 cd quick-document
 mvn clean instal
 ```
-You need to add the System Variable named TESSDATA_PREFIX that will hold path of the [OCR/tessdata](https://github.com/patrickHub/Quick-Documents/tree/main/OCR/tessdata) as value.
+You need to add a System Variable named TESSDATA_PREFIX that will hold path of the [OCR/tessdata](https://github.com/patrickHub/Quick-Documents/tree/main/OCR/tessdata) as value.
 
 And then your can upload it into an application server as [Wildfly] (https://www.wildfly.org/), [Glassfish] (https://glassfish.org/) or [Tomcat] (http://tomcat.apache.org/) then start upload your images into [http://127.0.0.1:8080/QuickDocumentService]
 
