@@ -1,9 +1,8 @@
 package ch.cloud.quickdocument.service.dam.adapter;
 
-import java.text.SimpleDateFormat;
 import java.util.Objects;
-import ch.cloud.quickdocument.service.dam.model.Dtos.ImageDTO;
-import ch.cloud.quickdocument.service.dam.model.entities.Image;
+import ch.cloud.quickdocument.service.dam.model.Dtos.ImageTextDTO;
+import ch.cloud.quickdocument.service.dam.model.entities.ImageText;
 
 /**
  * 
@@ -19,28 +18,27 @@ public class DbToDtoMapper {
 
   /**
    * 
-   * Method to map image entity into image Dto
+   * Method to map imageText entity into imageText Dto
    * 
-   * @param  image Image entity
+   * @param  imageText ImageText entity
    * 
-   * @return       ImageDTO
+   * @return           ImageTextDTO
    * 
    */
-  public static ImageDTO mapImageToDto(Image image) {
+  public static ImageTextDTO mapImageTextToDto(ImageText imageText) {
 
-    if (Objects.isNull(image)) {
+    if (Objects.isNull(imageText)) {
       return null;
     }
 
-    ImageDTO imageDTO = new ImageDTO();
+    ImageTextDTO imageTextDTO = new ImageTextDTO();
 
-    imageDTO.setId(image.getId());
-    imageDTO.setImgPath(image.getImgPath());
+    imageTextDTO.setId(imageText.getId());
+    imageTextDTO.setImgPath(imageText.getImgPath());
+    imageTextDTO.setContent(imageText.getContent());
 
-    SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
-    imageDTO.setUploadOn(format.format(image.getUploadOn()));
 
-    return imageDTO;
+    return imageTextDTO;
 
   }
 

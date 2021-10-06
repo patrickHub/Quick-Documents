@@ -1,0 +1,7 @@
+ch\cloud\quickdocument\service\locale\handler\LocaleSelectorHandler.class
+ch\cloud\quickdocument\service\locale\model\beans\LocaleBean.class
+ch\cloud\quickdocument\service\locale\model\entities\SupportedLocale.class
+ch\cloud\quickdocument\service\locale\utilities\PropertiesUtil.class
+ch\cloud\quickdocument\service\locale\model\beans\LocaleBean$LocaleDTO.class
+ch\cloud\quickdocument\service\locale\utilities\TemplateUtil.class
+ch\cloud\quickdocument\service\locale\model\beans\MessageFormatterMethod.class

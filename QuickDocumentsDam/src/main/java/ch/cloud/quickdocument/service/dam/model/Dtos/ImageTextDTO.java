@@ -14,7 +14,7 @@ public class ImageTextDTO {
   private String content;
 
 
-  private ImageDTO imageDTO;
+  private String imgPath;
 
 
   public int getId() {
@@ -37,13 +37,14 @@ public class ImageTextDTO {
   }
 
 
-  public ImageDTO getImageDTO() {
-    return imageDTO;
+  public String getImgPath() {
+    return imgPath;
   }
 
 
-  public void setImageDTO(ImageDTO imageDTO) {
-    this.imageDTO = imageDTO;
+  public void setImgPath(String imgPath) {
+    this.imgPath = imgPath;
   }
+
 
 }

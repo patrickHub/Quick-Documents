@@ -1,9 +1,7 @@
 package ch.cloud.quickdocument.service.dam.adapter;
 
 import java.util.Objects;
-import ch.cloud.quickdocument.service.dam.model.Dtos.ImageDTO;
 import ch.cloud.quickdocument.service.dam.model.Dtos.ImageTextDTO;
-import ch.cloud.quickdocument.service.dam.model.entities.Image;
 import ch.cloud.quickdocument.service.dam.model.entities.ImageText;
 
 /**
@@ -35,35 +33,12 @@ public class DtoToDbMapper {
 
     ImageText imageText = new ImageText();
 
+    imageText.setImgPath(imageTextDto.getImgPath());
     imageText.setContent(imageTextDto.getContent());
 
     return imageText;
 
   }
 
-
-
-  /**
-   * 
-   * Method to map image Dto into image entity
-   * 
-   * @param  imageText image Dto
-   * 
-   * @return           image
-   * 
-   */
-  public static Image mapImageDtoToDb(ImageDTO imageDto) {
-
-    if (Objects.isNull(imageDto)) {
-      return null;
-    }
-
-    Image image = new Image();
-
-    image.setImgPath(imageDto.getImgPath());
-
-    return image;
-
-  }
 
 }

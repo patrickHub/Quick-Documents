@@ -11,10 +11,10 @@
   <packaging>pom</packaging>
   <name>Quick Documents Service</name>
   <modules>
-  	<module>QuickDocumentRest</module>
-  	<module>QuickDocumentsMvc</module>
   	<module>QuickDocumentsDam</module>
   	<module>QuickDocumentsLocale</module>
+  	<module>QuickDocumentMvc</module>
+  	<module>QuickDocumentRest</module>
   </modules>
   
   

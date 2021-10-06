@@ -1,0 +1,9 @@
+ch\cloud\quickdocument\service\rest\utilities\Utility.class
+ch\cloud\quickdocument\service\rest\configuration\AppConfigurationRest.class
+ch\cloud\quickdocument\service\rest\utilities\FileImageUtil.class
+ch\cloud\quickdocument\service\rest\filter\RequestResponseLoggingFilter.class
+ch\cloud\quickdocument\service\rest\configuration\Application.class
+ch\cloud\quickdocument\service\rest\configuration\Constants.class
+ch\cloud\quickdocument\service\rest\configuration\CustomWebMvcConfigurer.class
+ch\cloud\quickdocument\service\rest\v1\api\FileImageController.class
+ch\cloud\quickdocument\service\rest\v1\api\TestRestController.class
