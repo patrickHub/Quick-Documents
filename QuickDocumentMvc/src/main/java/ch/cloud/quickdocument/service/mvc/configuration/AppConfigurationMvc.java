@@ -9,11 +9,9 @@ import ch.cloud.quickdocument.service.dam.utilities.Utility;
  */
 public class AppConfigurationMvc {
 
-  private static final String PROD_BASE_URI = "https://wwww.quickdocument.ch/QuickDocumentMvc";
-  private static final String TEST_BASE_URI = "http://127.0.0.1:8070/QuickDocumentMvc";
+  private static final String TEST_BASE_URI = "http://127.0.0.1:8080/QuickDocumentMvc";
 
-  private static final String PROD_BASE_REST_URI = "http://127.0.0.1:8070/QuickDocumentRest-1.0.0";
-  private static final String TEST_BASE_REST_URI = "http://127.0.0.1:8070/QuickDocumentRest-1.0.0";
+  private static final String TEST_BASE_REST_URI = "http://127.0.0.1:8080/QuickDocumentRest-1.0.0";
 
   public static String getBaseUri() {
 
@@ -21,7 +19,7 @@ public class AppConfigurationMvc {
       return TEST_BASE_URI;
     }
 
-    return PROD_BASE_URI;
+    return "http://" + System.getenv("QUICKDOCUMENT_MVC_SERVER") + ":8080/QuickDocumentMvc";
   }
 
 
@@ -31,7 +29,7 @@ public class AppConfigurationMvc {
       return TEST_BASE_REST_URI;
     }
 
-    return PROD_BASE_REST_URI;
+    return "http://" + System.getenv("QUICKDOCUMENT_REST_SERVER") + ":8080/QuickDocumentRest-1.0.0";
   }
 
 

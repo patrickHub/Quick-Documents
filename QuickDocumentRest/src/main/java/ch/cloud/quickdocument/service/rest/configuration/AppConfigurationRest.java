@@ -9,8 +9,7 @@ import ch.cloud.quickdocument.service.rest.utilities.Utility;
  */
 public class AppConfigurationRest {
 
-  private static final String PROD_BASE_URI = "https://wwww.quickdocument.ch/QuickDocumentRest-1.0.0";
-  private static final String TEST_BASE_URI = "http://127.0.0.1:8070/QuickDocumentRest-1.0.0";
+  private static final String TEST_BASE_URI = "http://127.0.0.1:8080/QuickDocumentRest-1.0.0";
 
   public static String getBaseUri() {
 
@@ -18,7 +17,7 @@ public class AppConfigurationRest {
       return TEST_BASE_URI;
     }
 
-    return PROD_BASE_URI;
+    return "http://" + System.getenv("QUICKDOCUMENT_REST_SERVER") + ":8080/QuickDocumentRest-1.0.0";
   }
 
 

@@ -32,17 +32,20 @@ public class QuickDocumentPersistentManager {
   private final String PROJECT_NAME =
       Utility.isLocalDeployment() ? "QuickDocumentDatabaseDeveloper.cfg.properties" : "QuickDocumentDatabaseProduction.cfg.properties";
 
+  private final String DATABASE_IP = Utility.isLocalDeployment() ? "127.0.0.1" : System.getenv("QUICKDOCUMENT_DATABASE_SERVER");
+
   @Autowired
   ResourceLoader resourceLoader;
 
   @Bean
   public DataSource dataSource() {
 
+    System.out.println("FOUND QUICKDOCUMENT_DATABASE_SERVER: " + DATABASE_IP);
+
     DriverManagerDataSource dataSource = new DriverManagerDataSource();
     Properties dbConfigProperties = loadDbConfigProperties();
-
     dataSource.setDriverClassName(dbConfigProperties.getProperty("jdbc.driverClassName"));
-    dataSource.setUrl(dbConfigProperties.getProperty("jdbc.url"));
+    dataSource.setUrl("jdbc:mysql://" + DATABASE_IP + ":3306/quickdocument_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC");
     dataSource.setUsername(dbConfigProperties.getProperty("jdbc.username"));
     dataSource.setPassword(dbConfigProperties.getProperty("jdbc.password"));
 
@@ -56,7 +59,7 @@ public class QuickDocumentPersistentManager {
     LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
 
     sessionFactory.setDataSource(dataSource());
-    sessionFactory.setPackagesToScan(new String[] {"ch.cloud.quickdocument.service.dam.model.entities"});
+    sessionFactory.setPackagesToScan("ch.cloud.quickdocument.service.dam.model.entities");
     sessionFactory.setHibernateProperties(hibernateProperties());
     return sessionFactory;
 
