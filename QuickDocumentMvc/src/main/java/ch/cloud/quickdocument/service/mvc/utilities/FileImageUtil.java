@@ -24,7 +24,7 @@ import net.sourceforge.tess4j.TesseractException;
  */
 public class FileImageUtil {
 
-  public static String UPLOAD_DIR = "/quick-directory-images/";
+  public static String UPLOAD_DIR = "/quick-directory-images-rest/";
 
   private FileImageUtil() {};
 

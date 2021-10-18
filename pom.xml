@@ -64,7 +64,7 @@
 		<dependency>
 		    <groupId>net.sourceforge.tess4j</groupId>
 		    <artifactId>tess4j</artifactId>
-		    <version>4.5.4</version>
+		    <version>3.5.2</version>
 		</dependency>
 						
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->

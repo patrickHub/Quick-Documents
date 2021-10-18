@@ -1,6 +1,7 @@
 package ch.cloud.quickdocument.service.mvc.configuration;
 
 import ch.cloud.quickdocument.service.dam.utilities.Utility;
+import ch.cloud.quickdocument.service.mvc.utilities.RestClientUtil;
 
 /**
  * 
@@ -9,27 +10,21 @@ import ch.cloud.quickdocument.service.dam.utilities.Utility;
  */
 public class AppConfigurationMvc {
 
-  private static final String TEST_BASE_URI = "http://127.0.0.1:8080/QuickDocumentMvc";
+  private static final String BASE_URI = Utility.isLocalDeployment() ? "http://127.0.0.1:8080/QuickDocumentMvc"
+      : "http://" + RestClientUtil.queryPulbicIpAddressEndpoint() + ":8080/QuickDocumentMvc";
 
-  private static final String TEST_BASE_REST_URI = "http://127.0.0.1:8080/QuickDocumentRest-1.0.0";
+  private static final String BASE_REST_URI = Utility.isLocalDeployment() ? "http://127.0.0.1:8080/QuickDocumentRest-1.0.0"
+      : "http://" + RestClientUtil.queryRestUserDataEndpoint() + ":8080/QuickDocumentRest-1.0.0";
 
   public static String getBaseUri() {
 
-    if (isLocalDeployment()) {
-      return TEST_BASE_URI;
-    }
-
-    return "http://" + System.getenv("QUICKDOCUMENT_MVC_SERVER") + ":8080/QuickDocumentMvc";
+    return BASE_URI;
   }
 
 
   public static String getBaseRestUri() {
 
-    if (isLocalDeployment()) {
-      return TEST_BASE_REST_URI;
-    }
-
-    return "http://" + System.getenv("QUICKDOCUMENT_REST_SERVER") + ":8080/QuickDocumentRest-1.0.0";
+    return BASE_REST_URI;
   }
 
 

@@ -17,6 +17,7 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import ch.cloud.quickdocument.service.dam.utilities.RestClientUtil;
 import ch.cloud.quickdocument.service.dam.utilities.Utility;
 
 /**
@@ -32,15 +33,13 @@ public class QuickDocumentPersistentManager {
   private final String PROJECT_NAME =
       Utility.isLocalDeployment() ? "QuickDocumentDatabaseDeveloper.cfg.properties" : "QuickDocumentDatabaseProduction.cfg.properties";
 
-  private final String DATABASE_IP = Utility.isLocalDeployment() ? "127.0.0.1" : System.getenv("QUICKDOCUMENT_DATABASE_SERVER");
+  private final String DATABASE_IP = Utility.isLocalDeployment() ? "127.0.0.1" : RestClientUtil.queryDBUserDataEndpoint();
 
   @Autowired
   ResourceLoader resourceLoader;
 
   @Bean
   public DataSource dataSource() {
-
-    System.out.println("FOUND QUICKDOCUMENT_DATABASE_SERVER: " + DATABASE_IP);
 
     DriverManagerDataSource dataSource = new DriverManagerDataSource();
     Properties dbConfigProperties = loadDbConfigProperties();
